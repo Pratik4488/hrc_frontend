@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.table{
+    max-height: 69vh;
+    overflow: auto;
+}
+.tableContainer{
+    max-width: 100vw;
+}
+
+.MuiToolbar-root{
+    color:white;
+    text-overflow: clip;
+}
+.MuiDataGrid-columnHeaderTitleContainer{
+    padding: 0;
+    max-width: 100px;
+    inline-size: 100px;
+    overflow-wrap: break-word;
+    text-overflow: clip;
+}
+.MuiDataGrid-columnHeaderTitle{
+    text-overflow: clip;
+    overflow-wrap: break-word;
+}
+
+.MuiDataGrid-root .MuiDataGrid-columnHeaderTitle {
+    overflow: visible;
+    font-weight: 300;
+    white-space: nowrap;
+    text-overflow: clip;
+    overflow-wrap: break-word;
+    inline-size: 100px;
+    height: 100px;
+}

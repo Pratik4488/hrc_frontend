@@ -1,0 +1,157 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.btn_big{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-direction: column; */
+    background-color: #19334d;
+    height: 10vh;
+    width: 100vw;
+}
+
+#btn1{
+    border-radius: 10px 0px 0px 10px;
+    /* width:30rem; */
+
+
+}
+#btn3{
+    border-radius: 0px 10px 10px 0px;
+    /* width:30rem; */
+
+
+}
+#btna{
+    border-radius: 10px 0px 0px 10px;
+    /* width:30rem; */
+}
+
+#btnb{
+    border-radius: 0px 10px 10px 0px;
+    /* width:30rem; */
+
+
+}
+.btn1{
+
+    padding: 10px 5px;
+    width: 9rem;
+    height: 6vh;
+    background: transparent;
+    color: white;
+    border: 2px solid rgb(10, 172, 212);
+    /* border-radius: 10px; */
+    
+}
+
+.btn1:hover{
+
+    background-color:rgb(22, 181, 221) ;
+    border:2px solid white;
+}
+
+.search>input{
+
+    width:15rem;
+    height:6vh;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+}
+
+.refresh>button{
+
+    width:4rem ;
+    height:6vh;
+    background-color: rgb(43, 57, 71);
+    border: 2px solid rgb(22, 181, 221);
+    border-radius:5px;
+    color: white;
+
+}
+
+.refresh>button:hover{
+
+    background-color:rgb(22, 181, 221) ;
+    border:2px solid white;
+
+}
+
+.btn2{
+
+    padding: 10px 5px;
+    width: 10rem;
+    height: 6vh;
+    background: transparent;
+    color: white;
+    border: 2px solid rgb(22, 181, 221);
+    /* border-radius: 10px; */
+}
+.btn2:hover{
+
+    background-color:rgb(22, 181, 221) ;
+    border:2px solid white;
+    
+}
+.btn2:disabled{
+    border: 1px solid white;
+    background: rgba(128, 128, 128, 0.192);
+}
+
+.addForm{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+input{
+    height:3rem;
+    width: 15rem;
+    margin: 10px 20px;
+
+}
+label{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    height:3rem;
+    width: 15rem;
+    font-size: 12px;
+    text-align: left;
+    margin: 10px 20px;
+}
+label>input{
+    position: absolute;
+    border: none;
+    outline: none;
+    width: 10rem;
+    height: 1rem;
+    bottom: 0px;
+}
+.addbuttons{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.addbuttons>button{
+    width: 45%;
+    margin: 0px 1rem;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 0px;
+}
+.addbuttons>button:hover{
+    width: 45%;
+    margin: 0px 1rem;
+    background: white;
+    border: 2px solid white;
+    color: rgb(6, 67, 171);
+    padding: 10px 0px;
+}

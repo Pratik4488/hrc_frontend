@@ -1,0 +1,26 @@
+.container {
+  background-color: rgb(53, 63, 75);
+  height: 15vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.ABClogo {
+  position: absolute;
+}
+.hrc_logo {
+  position: relative;
+  left: 50vw;
+  transform: translate(-100px, 0);
+}
+
+.hrc_logo > img,
+.ABClogo > img {
+  height: 3rem;
+}
+.ABClogo > p {
+  font-size: 2rem;
+  color: white;
+  margin: 1px;
+}

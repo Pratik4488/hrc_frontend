@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
 
+//import './App.css';
+import React, {useState} from 'react';
+import { Nav_bar } from './component/nav_bar/Nav_bar.js';
+import { Button } from './component/Button/Button.jsx';
+import { DataTable } from './component/DataTable/DataTable.jsx'
+import {Footer} from './component/footer/Footer'
+// import {Test} from './component/test/test.js'
 function App() {
+  const [selection, setselection] = useState([])
+  const handleCallback = (childData) => {
+    setselection(childData);
+  }
+
+  // fetching data 
+  const [rows, setRows] = useState([]);
+  const getData = (data)=>{
+    setRows(data);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Nav_bar />
+      <Button selectedRows={selection} getData = {getData} />
+      <DataTable selectedRowsCallback = {handleCallback} rowData = {rows} />
+      <Footer />
+      {/* <Test/> */}
+    </>
   );
 }
 
